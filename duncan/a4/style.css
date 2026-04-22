@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.calculator {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px gray;
+}
+
+h1 {
+    color: darkblue;
+    margin-bottom: 25px;
+}
+
+.input-section, .tip-section, .split-section {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: black;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.tax-section, .total-section, .split-total {
+    background-color: whitesmoke;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.result {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: darkblue;
+}
+
+.buttons {
+    margin: 25px 0;
+}
+
+button {
+    padding: 12px 25px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:first-child {
+    background-color: green;
+    color: white;
+}
+
+button:last-child {
+    background-color: red;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.link {
+    margin-top: 20px;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

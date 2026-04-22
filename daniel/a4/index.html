@@ -1,0 +1,30 @@
+<!Doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>redirect</title>
+</head>
+<body>
+	<form>
+		<label>Websites (do the reaction one)</label>
+	    <select id="worpstit">
+	        <option value="t">Tip Calculator</option>
+	        <option value="r">Reaction</option>
+	    </select>
+	    <br>
+	    <input type="button" value="OK" onclick="we();">
+	</form>
+	<script>
+		function we() {
+			if (document.getElementById('worpstit').value == "t") {
+				window.location.href = "Tip.html"
+			}
+			else {
+				if (document.getElementById('worpstit').value == "r") {
+					window.location.href = "react.html"
+				}
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>This is family friendly</title>
+</head>
+<body>
+	<h1>The Tax Evasionator</h1>
+	<form>
+		<label>Calculator</label><br>
+		Money: $<input type="text" id="shuttle" onkeyup="cal()"><br>
+		<!--<input type="button" value="Evade" onclick="cockulate()"> -->
+		Table amount: <input type="text" id="co" onkeyup="cal()">%<br>
+		Victims: <input type="text" id="share" onkeyup="cal()"><br>
+	</form>
+	<button onmouseup="wqwe()">wercesher</button>
+	<button onmouseup="bec()">Back</button>
+	<p id="cheats"></p>
+	<p id="frend"></p>
+
+	<script>
+			document.getElementById('share').value = 1
+		function cal() { 
+			var e = Number(document.getElementById('shuttle').value);
+			var American = Number(document.getElementById('co').value);
+			var gst = 0.05 * e;
+			var calculated = Number(document.getElementById('share').value);
+			var aftertax = gst + (e*((American/100) + 1)); 
+			document.getElementById('cheats').innerHTML = "Subtotal: $" + ((Math.ceil(aftertax * 100))/100).toFixed(2);
+			document.getElementById('frend').innerHTML = "Total: $" + ((Math.ceil((aftertax/calculated)*100))/100).toFixed(2)
+		}
+		function wqwe() {
+			window.location.reload();
+		}
+		function bec() {
+			window.location.href = "index.html"
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+/* style.css */
+
+body {
+  font-family: Arial, Helvetica;
+  margin: 0px 100px;
+  background-color: thistle;
+  color: deeppink;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+  color: deeppink;
+}
+
+table,
+th,
+td {
+  border: 3px solid black;
+  padding: 25px;
+}
+
+a {
+  color: purple;
+}
+
+a:hover {
+  color: deeppink;
+}
+
+.button {
+  background-color: hotpink;
+  color: white;
+  text-decoration: none;
+  padding: 10px 25px;
+  font-size: 1.25em;
+  border-radius: 10px;
+  display: inline-block;
+}

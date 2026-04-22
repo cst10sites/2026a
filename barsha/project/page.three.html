@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The history of numbers</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+     body{
+       background-image: url(Babylonian.jpg);
+       background-position: center 0%;
+    }
+    div.content {
+  background: rgba(0, 30, 70, 0.80);
+}
+  </style>
+</head>
+<body>
+  <div class="topnav">
+    <a href="page.three.html">Mini test</a>
+    <div id="moreLinks">
+      <a href="Help.html">Help page</a>
+    </div>
+    <a class="icon" onclick="showHideMenu()">≡</a>
+  </div>
+  <div class="content">
+    <h1>Mini-test</h1>
+    <form>
+      <label>1. How many numbers can you actually count on both hands?</label><br>
+      <input type="radio" value="5" name="q1">
+      <label>5</label><br>
+      <input type="radio" value="10" name="q1">
+      <label>10</label><br>
+      <input id="correct" type="radio" value="24" name="q1">
+      <label>24</label><br>
+
+      <label>2. How many years does the Lebombo bone date back to?</label><br>
+      <input type="radio" value="12,000" name="q2">
+      <label>12,000</label><br>
+      <input type="radio" value="24,000" name="q2">
+      <label>24,000</label><br>
+      <input id="correct" type="radio" value="43,000" name="q2">
+      <label>43,000</label><br>
+
+      <label>3. What is positional notation?</label><br>
+      <input type="radio" value="Something to help make number systems" name="q3">
+      <label>Something to help make number systems</label><br>
+      <input id="correct" type="radio" value="Where the position of digits determines its value" name="q3">
+      <label>Where the position of digits determines its value</label><br>
+      <input type="radio" value="Symbols values don't change based on their position" name="q3">
+      <label>Symbols values don't change based on their position</label><br>
+
+      <label>4. Who was the first person to use zero as a number rather than a placeholder?</label><br>
+      <input id="correct" type="radio" value="Brahmagupta" name="q4">
+      <label>Brahmagupta</label><br>
+      <input type="radio" value="Bramagupta" name="q4">
+      <label>Bramagupta</label><br>
+      <input type="radio" value="Brahmaguta" name="q4">
+      <label>Brahmaguta</label><br>
+
+      <label>5. What was the first number system?</label><br>
+      <input id="correct" type="radio" value="Mesopotamia base 60" name="q5">
+      <label>Mesopotamia base 60</label><br>
+      <input type="radio" value="Egyptian base 10" name="q5">
+      <label>Egyptian base 10</label><br>
+      <input type="radio" value="Roman numerals" name="q5">
+      <label>Roman numerals</label><br>
+
+      <label>6. What is the name of the clay envelope that people would put tokens into to keep them from breaking?</label><br>
+      <input type="radio" value="Bulu" name="q6">
+      <label>Bulu</label><br>
+      <input id="correct" type="radio" value="Bullae" name="q6">
+      <label>Bullae</label><br>
+      <input type="radio" value="Clay ball" name="q6">
+      <label>Clay ball</label><br>
+
+      <label>7. What kind of bone was the Lebombo bone?</label><br>
+      <input type="radio" value="Deer fibula" name="q7">
+      <label>Deer fibula</label><br>
+      <input type="radio" value="Monkey fibula" name="q7">
+      <label>Monkey fibula</label><br>
+      <input id="correct" type="radio" value="Baboon fibula" name="q7">
+      <label>Baboon fibula</label><br>
+      <input type="button" value="Submit" onclick="checkResults()"><br> 
+      <input type="reset"><br> 
+    </form>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
