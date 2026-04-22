@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Assignment 4 App 1</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/5097/5097378.png">
+</head>
+<body>
+	<div>
+	<br><br>
+	<h1 style="text-align: center;">Tip Calculator</h1>
+	<h3 style="text-align: center;">Subtotal:</h3>
+	<form style="text-align: center;">
+		<input type="text" id="subtotal">
+		<input type="button" value="Submit" onclick="calculate()">
+	</form>
+	<p style="text-align: center;">+GST(5%)</p>
+	<p style="text-align: center;">After tax Total: </p>
+	<p id="output" style="text-align: center; color: lawngreen;"></p>
+	<br>
+	<form style="text-align: center;">
+		<label>Select your tip options: </label>
+		<br><br>
+
+		<input id="tip1" name="tip" type="radio" value="0">
+		<label>None (0%)</label>
+		<br>
+		<input id="tip2" name="tip" type="radio" value="0.10">
+		<label>Fair/bad (10%)</label>
+		<br>
+		<input id="tip3" name="tip" type="radio" value="0.15">
+		<label>Good/average (15%)</label>
+		<br>
+		<input id="tip4" name="tip" type="radio" value="0.20">
+		<label>Fantastic (20%)</label>
+
+		<br><br>
+		
+		<input type="button" value="Submit" onclick="tipcalculate();">
+
+	</form>
+	
+	<p id="outputTip" style="text-align: center; color: lawngreen;"></p>
+	<p id="outputAfterTip" style="text-align: center; color: lawngreen"></p>
+
+	<form style="text-align: center;">
+		<label>Select the # of people:</label>
+		<br><br>
+
+		<select id="splitDropdown">
+  		<option id="split1" value="1">1</option>
+  		<option id="split2" value="2">2</option>
+  		<option id="split3" value="3">3</option>
+  		<option id="split4" value="4">4</option>
+  		<option id="split5" value="5">5</option>
+  		<option id="split6" value="6">6</option>
+  		<option id="split7" value="7">7</option>
+  		<option id="split8" value="8">8</option>
+		</select>
+		<br><br>
+		<input type="button" value="Submit" onclick="splitbill()">
+
+	</form>
+
+	<p id="outputAfterSplit" style="text-align: center; color: lawngreen"></p>
+
+	<script src="calc.js" defer></script>
+	</div>
+
+	<p style="text-align: center">Click here to go to the <a href="reaction.html" style="color: white">Reaction Game</a>.</p>
+
+</body>
+</html>

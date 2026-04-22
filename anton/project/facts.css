@@ -1,0 +1,81 @@
+body {
+  font-family: georgia, serif;
+  margin: 0px 100px;
+  background-image: url("https://www.sabelt.com/wp-content/uploads/2021/05/SI202103260789_hires_jpeg_24bit_rgb.jpg");
+  background-color: rgba(255, 255, 255, 0.6);
+  background-size: 100% auto;
+  padding: 15px 25px;
+}
+div.border {
+  border: black;
+  border-width: thick;
+  border-style: double;
+  border-radius: 25px;
+  width: 1155px;
+  position: relative;
+  padding: 5px 25px;
+  background-color: lavender;
+}
+h1{
+  text-align: center;
+  font-family: serif;
+  font-size: 40px;
+}
+h2, h3{
+  text-align: center;
+  font-family: serif;
+}
+a {
+  color: maroon;
+}
+div.topnav {
+  border: black;
+  border-width: thin;
+  border-style: solid;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: goldenrod;
+  position: relative;
+}
+
+div.topnav #moreLinks {
+  display: none; 
+}
+div.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+div.topnav a:hover {
+  color: white;
+  background-color: darkslateblue;
+}
+
+div.topnav a.icon {
+  background: darkslateblue;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+div.content {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 25px;
+}
+.shadow-frame-special {
+    border: 5px solid #555;
+    padding: 5px;
+    background-color: darkred;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
+  }
+  .shadow-frame {
+    border: 5px solid #555;
+    padding: 5px;
+    background-color: lightyellow;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
+  }

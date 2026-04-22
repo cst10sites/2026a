@@ -1,0 +1,47 @@
+body {
+  font-family: Stencil Std;
+  font-size: 20px;
+  background-image: url("https://img.freepik.com/free-vector/gradient-abstract-wireframe-background_23-2149009903.jpg?semt=ais_hybrid&w=740&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px 100px;
+}
+table{
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3)
+}
+td {
+  color: lightgoldenrodyellow;
+  border: 2px solid black;
+  padding: 10px;
+}
+th{
+  color: yellowgreen;
+  border: 2px solid black;
+  padding: 10px;
+}
+td.example1{
+  background-color: black;
+  color: white;
+  font-size: 40px;
+  font-family: Luminari, fantasy;
+}
+.button{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: goldenrod;
+  box-shadow: 2px 1px;
+  color: black;
+  padding: 8px 28px;
+  text-decoration: none;
+  text-align:center;
+  font-size: 1.25em;
+  border-radius: 25px;
+  border-style: solid;
+  border-color: gold;
+  border-width: thick;
+  display: inline-block;
+}

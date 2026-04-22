@@ -1,0 +1,13 @@
+body{
+	margin: 10px, 10px;
+	background-image: url("https://www.kget.com/wp-content/uploads/sites/2/2022/03/Batman-Movies-Ranked.jpg");
+	background-size: 100% auto; /* stretch bg to fit */
+	text-align: center;
+	width: 100% auto;
+}
+h1 {
+  text-align: center;
+}
+label {
+  text-align: center;
+}

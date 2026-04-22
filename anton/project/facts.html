@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Team Facts</title>
+    <link rel="stylesheet" href="facts.css">
+    <link rel="icon" type="image/x-icon" href="https://www.freepnglogos.com/uploads/red-bull-logo/simple-company-red-bull-png-logo-7.jpg">
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <div id="moreLinks">
+          <a href="carTech.html">Car Technology</a>
+          <a href="drivers.html">Drivers New Lineup</a>
+          <a href="predictions.html">2026 Predictions</a>
+          <a href="facts.html">Facts Random Generator</a>
+        </div>
+        <a class="icon" onclick="showHideMenu()">...</a>
+    </div>
+    <div class="border">
+    <h1>Facts Generator</h1>
+    <img src="https://media.giphy.com/media/S6IBedP8VnTBvLMCjG/giphy.gif" width="300" class="shadow-frame-special" alt="celebrate">
+    <img src="https://media.giphy.com/media/l0NwvUd7IEjn1764U/giphy.gif" alt="surprise" class="shadow-frame" width="295">
+    <img src="https://media.giphy.com/media/gLLGj2bYYm2mm6nwVT/giphy.gif" class="shadow-frame-special" alt="speed" width="300">
+    <img src="https://i.pinimg.com/736x/48/33/4e/48334e293aeb93bf5c81b963abd447f5.jpg" class="shadow-frame" alt="funny" width="167">
+    <br><br>
+    <button onclick="alert('Congrats! You made it to the last page! (I hope you thoroughly read all the contents...)')" style="display: block; margin: 0 auto">:)</button>
+    <p style="text-align: center;">
+        Please click on the "Generate" button to learn facts about the team and the drivers.
+    </p>
+
+    <div class="button">
+    <button onclick="generate()" style="display: block; margin: 0 auto">Generate</button>
+    </div>
+    <p id="facts"></p>
+    </div>
+    <script>
+      function showHideMenu() {
+        var links = document.getElementById("moreLinks");
+        if (links.style.display == "block") {
+          links.style.display = "none"; 
+        } else {
+          links.style.display = "block"; 
+        }
+      }
+    </script>
+
+    <script src="facts.js"></script>
+
+</body>
+</html>
