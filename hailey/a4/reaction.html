@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Assignment 4 App 2</title>
+	
+	<link rel="stylesheet" href="style.css">
+	<!--need to link to style.css-->
+</head>
+<body>
+	<!--meta http-equiv="refresh" content="25; url=calc.html"-->
+	<h1>Reaction Timer</h1>
+	<button onclick="react()" id="buttonID">Click</button>
+	<button onclick="reset();">Reset</button>
+
+	 <br>
+	 <br> 
+
+	 <button onclick="redirect()"><em>Calculator</em></button>
+
+	<!--<button onclick="reset()" id="">Reset</button>-->
+	<!--add a reset button that refreshes the page-->
+	<p id="output"></p>
+
+	<a target="_blank" href="calc.html"></a>
+
+	<!--need to move this code to reaction.js-->
+    <script>
+    	var startTime;
+    	var gameState = "wait"; // "wait", "started", "ended"
+    	var clicks = 1; 
+
+    	function react() {
+
+    		
+
+
+    		if (gameState == "started") {
+
+    			var currentTime = new Date();
+    			var timePassed = (currentTime - startTime) / 1000;
+    			// console.log(timePassed);
+    			
+
+    			var display;
+		display = document.getElementById('output').innerHTML
+		display =  timePassed + "<br>" + display;
+		document.getElementById('output').innerHTML = display;
+
+    			
+    		}
+    	
+
+
+
+    		if (gameState == "wait") {
+
+    			var display2; 
+    			display2 = document.getElementById('output').innerHTML
+    			display2 = "Game Over!" + display2;
+    			document.getElementById('output').innerHTML = display2;
+    			console.log('Game Over!');
+
+    			clearInterval(myTimer); 
+
+    		}
+
+
+
+    	
+    		 if (clicks == 1) {
+
+
+    	gameState = "ended"
+
+    
+		var clickTime = new Date() // click time stored
+		var endTime = (clickTime - startTime) / 1000; 
+		console.log(endTime);
+
+
+}
+
+}
+
+
+
+
+
+    	
+
+    	function myTimer() {
+    		 if (gameState == "started") {
+    			var currentTime = new Date();
+    			var timePassed = (currentTime - startTime) / 1000;
+    			//console.log(timePassed);
+    			document.getElementById('output').innerHTML = timePassed;
+    	}
+    }
+
+
+    	function stopTimer() {
+    		if (gameState == "ended") {
+
+    			clearInterval(myTimer);
+    		}
+    	}
+
+    	function redirect() {
+    		window.location.href = 'calc.html'; 
+    	}
+
+
+
+			
+
+		// Need to implement
+    		
+
+
+    		// 1. display game over if the button is pressed too soon
+
+
+
+
+    		// 2. stop the timer if the start has already been started
+    		// 3. change gameState to "ended"
+    		// gameState = "ended"
+    		// var endTime = new Date()
+
+
+
+
+    	/* This code changes the background color to newColor!
+                                    
+	   Explanation: updateBackground is called every 0.1 sec by default
+	   and generates a random decimal number between 0 and 1. If it
+	   generates a number less than tolerance, it will change
+	   the background color. The actual time it takes to change color is
+	   random but by default its average time is
+	   [interval time in sec] / [probability] = 0.1 / 0.02 = 5 seconds.
+    	*/
+
+    	var newColor = "red";
+
+    	function updateBackground() {
+    		// DO NOT MODIFY THIS CONDITION
+    		if (Math.random() < 0.02 && gameState == "wait") {
+    			document.body.style.backgroundColor = newColor;
+    			// Need to implement:
+    			// 1. start the timer, change gameState = true;
+    			// 2. show the timer on the screen; need to add a place in HTML
+    			// 3. change gameState to "started"
+    			startTime = new Date();
+    			gameState = "started";
+    		}
+
+    	/* if (gameState == "started") {
+    			var currentTime = new Date();
+    			var timePassed = (currentTime - startTime) / 1000;
+    			//console.log(timePassed);
+    			document.getElementById('output').innerHTML = timePassed;
+    		}
+
+    		 // Removing this part makes it so that the timer doesn't appear
+
+    		*/
+    		
+
+
+
+
+
+    	}
+
+
+	function reset() {
+    		window.location.reload();
+    	}
+
+
+    	// DO NOT MODIFY THIS LINE
+    	setInterval(updateBackground, 100);
+
+    </script>
+</body>
+</html>
+

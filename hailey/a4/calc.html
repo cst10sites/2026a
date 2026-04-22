@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Assignment 4 App 1</title>
+	 <link rel="icon" type="image/png" href="calculator.png">
+	<!--need to link to style.css-->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Tip Calculator</h1>
+<form>
+
+<p> + GST (5%) </p>
+<input type="text" id="subtotal">
+<p id="afterGST"></p>
+
+   
+
+
+   <h2>Tip</h2>
+   <!-- id in select, value in option-->
+   <select id="tipValue"><!--no input for dropdown-->
+       <option value="0">None</option>
+       <option value="0.10">Fair/Bad (10%)</option>
+       <option value="0.15">Good/Average (15%)</option>
+       <option value="0.20">Excellent (20%)</option>
+   </select>
+   <br>
+
+   <p>Tip Amount</p>
+
+   <p id="tipDollar"></p>
+
+
+    <p> Total (Tips + GST) </p>
+
+   <p id="tips"></p>
+
+
+   <h2>Coupon <em>(Input decimal form)</em></h2>
+   <h2><em>0.20, 0.35 etc.</em></h2>
+    <input type="text" id="discountValue">
+
+
+    <!--<select id="discountValue"> 
+    <option value="0">None</option>
+    <option value="0.10">10% OFF</option>
+    <option value="0.15">25% OFF</option>
+    <option value="0.35">35% OFF</option>
+    <option value="0.50">50% OFF</option>
+    <option value="0.55">55% OFF</option>
+    <option value="0.75">75% OFF</option>
+
+    </select>-->
+    <br>
+
+    <p>After Discount</p>
+    <p id ="discount"></p>
+
+    <p>Total (Discount + Tip) </p>
+    <p id ="fullTotal"></p>
+
+
+
+   <h2>Split</h2>
+   <select id="splitValue">
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+    <option value="4">Four</option>
+    <option value="5">Five</option>
+    <option value="6">Six</option>
+    </select>
+    <br>
+   
+
+    <p>After Split</p><p id="split"></p>
+
+
+   
+   <input type="button" value="Submit" onclick="calculate()">
+  <button onclick="reset();">Reset</button>
+   
+
+  
+
+</form>
+
+	
+<script src="calc.js"></script>
+
+	</body>
+	</html>

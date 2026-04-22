@@ -1,0 +1,44 @@
+body {
+	    font-family: Roboto;
+	    margin: 0px 100px;
+  		text-align: center;
+  		font-size: 12pt;
+	}
+
+	p {
+ 		margin: 0px;
+  		padding: 100px;
+  		font-size: 7em;
+	}
+
+	#timeOutput {
+	    font-size: 7em;
+	}
+
+	#h1 {
+  		font-size: 3em;
+	}
+
+	#buttonID {
+		margin: 0 auto;
+    	width: 130px;
+    	padding: 8px;
+    	border: 1px solid;
+   	 	border-radius: 3px;
+	}
+
+	.no-select {
+	    user-select: none;
+	    -webkit-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	}
+
+	#a {
+		margin: 0 auto;
+    	width: 150px;
+    	padding: 8px;
+    	border: 1px solid;
+   	 	border-radius: 3px;
+   	 	font-weight: bold;
+	}

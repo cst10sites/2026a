@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Assignment 3</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    .blackbg {
+        background-color: black;
+        color: white;
+        }
+    </style>
+
+  </head>
+  <body>
+    <h1>HTML Guild</h1>
+    <h2>Common HTML Tags outside &lt;body></h2>
+
+
+    <a class="button" href="../a3/index.html">inside body</a>
+    <br>
+    <br>
+
+
+      <table style="width: 80%">
+      <tr>
+        <th style="width: 30%">Tag</th>
+        <th style="width: 30%">Definition</th>
+        <th style="width: 30%">Example(s) if applicable </th>
+      </tr>
+
+      <tr>
+            <td>&lt;!DOCTYPE html></td>
+            <td>
+              This tag tells the browser that the document is written in HTML5. It ensures the page is rendered correctly by putting the browser in standards mode, and it should always appear at the very top of the HTML file.
+            </td>
+            <td>no examples*</td>
+          </tr>
+
+          <tr>
+            <td>&lt;html lang="en"></td>
+            <td>
+              This page is set to “en” for English. This tag helps websites such as Google Translate know the default language for this page is English.
+            </td>
+            <td>This page is set to “en” for English. This tag helps websites like Google Translate.</td>
+          </tr>
+
+          <tr>
+            <td>&lt;meta charset="UTF-8"></td>
+            <td>
+              This tag tells the browser to use the UTF-8 character encoding, which supports almost all characters and symbols from every language.
+            </td>
+            <td>
+               <ul>
+                  <li>Accented letters are not possible without &lt;meta charset="UTF-8">: é, ñ, ü</li>
+                </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td>&lt;title>&lt;/title></td>
+            <td>
+            This tag sets the title of the webpage, which appears in the browser tab and is used by search engines as the page’s name. It helps users know what the page is about.
+            </td>
+            <td>
+              <img src="favicon tab.png" style="width: 250px" alt="favicon">
+            </td>
+          </tr>
+
+          <tr>
+            <td>&lt;meta http-equiv="refresh" content="0; url=$URL"></td>
+            <td>
+              This tag is used to automatically redirect a web page to a different URL after a specified time. The content attribute defines the delay (in seconds) and the destination URL.
+            </td>
+            <td>No examples*</td>
+          </tr>
+
+          <tr>
+            <td>&lt;link rel="stylesheet" href="style.css"></td>
+            <td>
+              Section that describes the internal CSS of the page.
+            </td>
+            <td class="blackbg">
+              this black background is made from using &lt;style>...&lt;/style>
+
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;ink rel="icon" type="image/x-icon"href="favicon.ico"></td>
+            <td>
+              Tag that points to an external CSS file.
+            </td>
+            <td>
+              The homepage and this page point to a common style.css file that controls the look of these pages.
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;style>...&lt;/style></td>
+            <td>Tag that adds a favicon.</td>
+            <td>
+              <img src="favicon photo.png" style="width: 200px" alt="favicon">
+            </td>
+          </tr>
+  </table>
+
+  </body>
+  </html>

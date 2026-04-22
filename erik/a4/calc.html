@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Assignment 4 App 1</title>
+	<link rel="icon" type="image/x-icon" href="clac.ico">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Tip Calculator</h1>
+<br>	
+	<h2>Subtotal</h2>
+	<form>
+		<input type="text" id="subtotal" onkeyup="calculate()">
+	</form>
+	<br>
+	<div class="subtotal">
+    <label>Subtotal (after GST 5%):</label>
+    <div id="output">$ 0.00</div>
+	</div>
+	<br>
+	<br>
+	<h3>Tip amount(%)</h3>
+	<form>
+	    <select id="tip" onmouseleave="calculate()" onkeydown="calculate()">
+	        <option value="0">0%</option>
+	        <option value="10">10%</option>
+	        <option value="15">15%</option>
+	        <option value="20">20%</option>
+		</select>
+	</form>
+	<br>
+	<div class="tip">
+    <label>Subtotal (after tip %):</label>
+    <div id="tipoutput">$ 0.00</div>
+	</div>
+	<br>
+	<h4>Would you like to split the bill?</h4>
+	<input type="number" id="split" min="1" max="100" value="1" onmouseleave="calculate()">
+	<br>
+	<br>
+	<div class="split">
+    <label>Final subtotal:</label>
+    <div id="splitoutput">$ 0.00</div>
+	</div>
+	<br>
+	<button onclick="reset()">refresh</button>
+	<br>
+	<br>
+	<a classe="button" href="reaction.html">Reaction.html</a>
+
+
+
+	<script src="calc.js"></script>
+</body>
+</html>

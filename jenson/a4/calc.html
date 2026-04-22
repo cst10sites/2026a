@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Assignment 4 App 1</title>
+	<!--need to link to style.css-->
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="calc.ico">
+</head>
+<body>
+	<h1>Tip Calculator</h1>
+	<form>
+		<input type="text" id="subtotal">
+		<input type="button" value="Submit" onclick="calculate()">
+		<input type="button" value="Reset" onclick="reload()">
+	</form>
+	<p id="output"></p>
+
+
+	<form>
+	    <label>Tip amount</label>
+	    <!-- id in select, value in option-->
+	    <select id="tipValue"><!--no input for dropdown-->
+	    	<option value="0">0%</option>
+	        <option value="0.1">10%</option>
+	        <option value="0.15">15%</option>
+	        <option value="0.25">25%</option>
+	        <option value="0.70">70%</option>
+	    </select>
+	    <br>
+	    <input type="button" value="OK" onclick="calculate();">
+	    <input type="reset" value="Reset">
+	</form>
+<p id="output2"><p>
+
+	<form>
+	    <label>Split between:</label>
+	    <!-- id in select, value in option-->
+	    <select id="splitNumber"><!--no input for dropdown-->
+	    	<option value="1">Just you</option>
+	        <option value="2">2 people</option>
+	        <option value="3">3 people</option>
+	        <option value="4">4 people</option>
+	        <option value="5">5 people</option>
+	    </select>
+	    <br>
+	    <input type="button" value="OK" onclick="calculate();">
+	    <input type="reset" value="Reset">
+	</form>
+	<p id="output3"><p>
+
+		<a class="button" href="../a4/reaction.html">Reaction time test<a>
+	<!--need to move code to calc.js-->
+	<script src="calc.js">
+		/* Summary:
+			1. Number(aStr): converts text to a number (for arithmetic)
+			2. aNumber.toFixed(2): converts a number to text with 2 decimal places
+		*/
+
+		
+	</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

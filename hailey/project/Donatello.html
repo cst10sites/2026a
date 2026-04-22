@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Donatello</title>
+		<link rel="stylesheet" href="style.css">
+		<style></style>
+	</head>
+	<body>
+		<div class="topnav">
+			<a href="index.html">Home</a>
+			<div id="moreLinks">
+				<a href="DaVinci.html">Leonardo da Vinci</a>
+				<a href="Donatello.html">Donatello</a>
+			</div>
+			<a class="icon" onclick="showHideMenu()">...</a>
+		</div>
+		<h1 id="DonatelloTitle">Donatello</h1>
+		<h2 id="DonaSub">Donatello?... Ninja Turtle?!??</h2>
+		<div class="section6">
+			<p> Born in Florence, Italy, in 1386 under the name Donato di Niccolò di Betto Bardi, Donatello grew up surrounded by a variety of artistic and cultural influences. Although little is known about his early education, it is thought that he started studying art at a young age. Donatello most likely acquired the fundamentals of sculpting and working with bronze during his apprenticeship with sculptor Lorenzo Ghiberti. Donatello's time with Lorenzo Ghiberti was crucial to his development as a sculptor because it gave him knowledge and expertise for his future profession. His artistic vision was also profoundly influenced by his exposure to classical antiquity and the innovative spirit of the era. </p>
+			<img alt="jpg" src="ninjaturtle.jpg">
+		</div>
+		<script>
+			function showHideMenu() {
+				var links = document.getElementById("moreLinks");
+				if (links.style.display == "block") {
+					links.style.display = "none"; // hide
+				} else {
+					links.style.display = "block"; // show
+				}
+			}
+		</script>
+	</body>
+</html>

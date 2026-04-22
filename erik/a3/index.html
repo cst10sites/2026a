@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Assignment 3</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>HTML/CSS Guide</h1>
+        <h2>Common HTML Tags inside &lt;body></h2>
+        <a class="button" href="outside.html">outside body</a>
+        <br>
+        <br>
+        <table style="width: 80%">
+            <tr>
+                <th style="width: 30%">Tag</th>
+                <th style="width: 30%">Definition</th>
+                <th style="width: 30%">Examples</th>
+            </tr>
+            <tr>
+                <td>&lt;h1&gt;...&lt;/h1&gt;, &lt;h4&gt;...&lt;/h4&gt;</td>
+                <td>Defines the most important heading on your web page, acting as its main title.</td>
+                <td>
+                    <h3>How to make cookies</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;p&gt;...&lt;/p&gt;</td>
+                <td>This tag is used to define a paragraph of text. It typically starts on a new line and occupies the full available width. </td>
+                <td>
+                    <p> This is a paragraph. </p>
+                    <p> This is a second paragraph. </p>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;img src="link" alt="Image adress"&gt;</td>
+                <td>This tag is used to embed an image into a web page.</td>
+                <td>
+                    <img src="https://platform.vox.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/15231691/453801468.0.0.1421786380.jpg" style="width: 250px" alt="baby penguin">
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;br&gt; and &lt;hr&gt;</td>
+                <td>These tags are self-closing tags used for specific formatting purposes. &lt;br&gt; stands for line break, &lt;hr&gt; stands for horizontal ruler as it makes a visable line.</td>
+                <td> Line <br>Break
+                    <hr style>Line Above
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;span&gt;...&lt;/span&gt;</td>
+                <td> This tag is a simple element used to target and apply styling with CSS to a small, inline piece of text or content. </td>
+                <td>this is <span style="color: blue">blue</span>. </td>
+            </tr>
+            <tr>
+                <td> &amp;lt; <br> &amp;gt; <br> &amp;amp; <br> &amp;nbsp; <br> &amp;apos; <br> &amp;quot; </td>
+                <td> In HTML, the ampersand character (&) signifies the beginning of an HTML entity. These entities are special sequences of characters that allow you to represent characters that are either reserved in HTML (like &lt;, &gt;, or "&" itself) or are not easily typed on a standard keyboard. </td>
+                <td> The "&copy;" symbol is not possible on keyboard. </td>
+            </tr>
+            <tr>
+                <td>&lt;a href="link"&gt;…&lt;/a&gt;</td>
+                <td>This tag creates hyperlinks for navigation, using the href attribute to specify the destination URL.</td>
+                <td>Click <a href="https://www.nationalgeographic.com/animals/birds/facts/penguins-1">here</a> for more info on penguins. </td>
+            </tr>
+            <tr>
+                <td> &lt;li&gt;...&lt;/li> <br> &lt;ol>...&gt;/ol> </td>
+                <td> The tag &lt;ol> is used to create an ordered list, where items are numbered sequentially. The &lt;li> tag denotes each individual list item and can be used within both ordered (&lt;ol>) and unordered lists (&lt;ul>). </td>
+                <td>
+                    <ol>
+                        <li>This is a</li>
+                        <li>Ordered list</li>
+                    </ol>
+                    <br>
+                    <ul>
+                        <li>This is a</li>
+                        <li>Unordered list</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;iframe src="link">&li;/iframe></td>
+                <td> The &lt;iframe> tag is used to embed another HTML document within the current document. The src attribute specifies the URL of the page to be displayed inside the iframe. </td>
+                <td>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.748547616042!2d-123.16672212384795!3d49.262211772203976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673aef44b8213%3A0xfed77b389f0f9a70!2sKitsilano%20Secondary%20School!5e0!3m2!1sen!2sca!4v1760984566390!5m2!1sen!2sca" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;table>...&lt;/table></td>
+                <td> These tags in HTML are used to define an HTML table. This element serves as a container for all the other elements that make up a table, such as rows, header cells, and data cells. </td>
+                <td>
+                    <table>
+                        <tr>
+                            <th style="width: 10%">Soccer team</th>
+                            <th style="width: 5%">Wins</th>
+                            <th style="width: 5%">Losses</th>
+                        </tr>
+                        <tr>
+                            <td>Kitsilano</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

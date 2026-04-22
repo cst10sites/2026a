@@ -1,0 +1,15 @@
+body {
+  font-family: Roboto;
+  margin: 0px 100px;
+  text-align: center;
+  font-size: 12pt;
+}
+
+
+#output, #subtotal, #tipoutput, #tip, #splitoutput, #split, #refresh {
+    margin: 0 auto;
+    width: 155px;
+    padding: 8px;
+    border: 1px solid;
+    border-radius: 3px; /*Note: makes the corners a bit round*/
+}

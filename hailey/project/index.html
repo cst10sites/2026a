@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Artists of the Renaissance</title>
+		<link rel="stylesheet" href="style.css">
+		<style></style>
+	</head>
+	<body>
+		<div>
+			<!--dropdown-->
+			<div class="topnav">
+				<a href="index.html">Home</a>
+				<div id="moreLinks">
+					<a href="DaVinci.html">Leonardo da Vinci</a>
+					<a href="Donatello.html">Donatello</a>
+				</div>
+				<a class="icon" onclick="showHideMenu()">...</a>
+			</div>
+			<div class="container">
+				<img id="specialImage" src="https://wallpaperaccess.com/full/5438748.jpg" alt="Special Image">
+				<h1 id="title">Artists of the Renaissance</h1>
+			</div>
+			<!--<div class="content">-->
+			<div class="image-text section1">
+				<img id="statueImage" src="https://www.theaterseatstore.com/blog/wp-content/uploads/2020/06/Renaissance-Background.jpg" alt="Statue">
+				<p>During the 14th century, a philosophy called “humanism” began to gain momentum in Italy. The term humanism is defined as “a philosophy and ethical stance that emphasizes human potential, reason, and ethics, focusing on human-wellbeing in the here and now, often without supernatural beliefs, valuing compassion, critical thinking, and scientific inquiry, to create meaningful lives and a better society.” It promoted the idea that humans should be the center of attention, and people should embrace the achievements of education, classical arts, literature, and science. Thus, the philosophy became the fondation of what we know as "The Renaissance." </p>
+			</div>
+			<div class="image-text section2">
+				<p> The Renaissance was a cultural movement and a rebirth in European history, following the Middle Ages. It spans the 14th through 17th centuries, although it sometimes provides more precise coverage of the 15th through 16th centuries. It was the transition to modernity, and was characterized by the European rediscovery and revival of the literary, philosophical, and artistic achievements of the classical era. It was associated with significant social change in art, architecture, politics, literature, exploration, and science. The Renaissance appeared first in the Republic of Florence, and then it spread through the rest of Italy and later through Europe. </p>
+				<img id="Italy" src="https://media.architecturaldigest.com/photos/688cd976a451604e0ccacf56/16:9/w_2240,c_limit/GettyImages-1498938090.jpg" alt="Florence">
+			</div>
+			<div class="artist-grid">
+				<div class="artist-card da-vinci">
+					<a href="DaVinci.html">
+						<img src="https://static.wixstatic.com/media/21c73d_7000e53f95994fdf8548d974b43ca4e9~mv2.jpg/v1/fill/w_534,h_636,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/21c73d_7000e53f95994fdf8548d974b43ca4e9~mv2.jpg" alt="Leonardo">
+					</a>
+					<p>Leonardo da Vinci</p>
+				</div>
+				<div class="artist-card donatello">
+					<a href="Donatello.html">
+						<img src="https://www.donatello.net/assets/img/donatello.jpg" alt="Donatello">
+					</a>
+					<p>Donatello</p>
+				</div>
+			</div>
+		</div>
+		<script>
+			function showHideMenu() {
+				var links = document.getElementById("moreLinks");
+				if (links.style.display == "block") {
+					links.style.display = "none"; // hide
+				} else {
+					links.style.display = "block"; // show
+				}
+			}
+		</script>
+	</body>
+</html>

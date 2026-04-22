@@ -1,0 +1,53 @@
+body {
+  font-family: Roboto;
+  margin: 0px 100px;
+  background-image: url("https://images.ctfassets.net/i04syw39vv9p/6uGKadVicojD2hzFF57VGt/af0a0775c124446ff484540d4384f9d9/polar-bear-mom-cubs-meril-darees-manon-moulis-1.jpeg?w=1200&h=800&q=70&fit=fill&fm=jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+}
+
+h1{
+  font-size: 50px;
+}
+
+h2{
+  font-size: 35px;
+}
+
+h3{
+  font-size: 40px;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: left;
+}
+
+
+table, th, td {
+  border: 3px solid black;
+}
+
+tr{
+  background: rgba(211, 211, 211, 0.5);
+}
+
+.button{
+      background-color: #008080;
+      color: white;
+      padding: 15px 32px;
+      text-decoration: none;
+      text-align: center;
+      font-size: 1.25em;
+      border: none;
+      border-radius: 25px;
+      border-style: solid;
+      border-color: #800000;
+      border-width: thick;
+      display: inline-block;
+    }
+
+    .button:hover {
+      background-color: darkslategrey;
+    }
