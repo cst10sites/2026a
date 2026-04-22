@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Assignment 4 App 2</title>
+	<link rel="stylesheet" href="calc.style.css">
+	<!--need to link to style.css-->
+</head>
+<body>
+	<h1>Reaction Timer</h1>
+	<button onclick="react()" id="react">Click?</button>
+	<button onclick="reset()" id="reset">Reset</button>
+
+	<!--add a reset button that refreshes the page-->
+	<p id="output"></p>
+
+
+	<h2>Redirection</h2>
+	<a class="button" target="_blank" href="a5/calc.html">Calculator</a>
+	<p id="SecondOutput"></p>
+
+	<!--need to move this code to reaction.js-->
+    <script>
+    	var gameState = "wait"; // "wait", "started", "ended"
+    	var startTime;
+    	var clicks = 1 
+
+    	function redirection(){
+    		var redirect
+    		var clicks = document.getElementById('SecondOutput').innerHTML
+    	}
+
+    	function react() {
+    		if (gameState == "started"){
+
+    			var currentTime = new Date();
+    			var timePassed = (currentTime - startTime) / 1000;
+    			// console.log(timePassed)
+
+			var display = document.getElementById('output').innerHTML
+			display = timePassed + "<br>" + display;
+			document.getElementById('output').innerHTML = display;
+
+		}
+
+			if (gameState == "wait"){
+
+				var display2
+				var display2 =  document.getElementById('output').innerHTML 
+				display2 = "Game Over" + display2;
+				document.getElementById('output').innerHTML = display2;
+				console.log('Game Over')
+
+				clearInterval(myTimer);
+
+			}
+
+			if (clicks == 1) {
+				gameState = "ended"
+
+				var clickTime = new Date(); 
+				var endTime = (clickTime - startTime) / 1000; 
+				console.log(endTime)
+			}
+
+
+    		// Need to implement
+    		// 1. display game over if the button is pressed too soon
+    		// 2. stop the timer if the start has already been started
+    		// 3. change gameState to "ended"
+    	}
+
+
+    	function myTimer(){
+    		if (gameState == "started"){
+
+    			var currentTime = new Date();
+    			var timePassed = (currentTime - startTime) / 1000;
+    		}
+    	}
+
+    	function endTime(){
+    		if (gameState == "ended")
+    		clearInterval(myTimer)
+    	}
+    
+
+    	/* This code changes the background color to newColor!
+
+	   Explanation: updateBackground is called every 0.1 sec by default
+	   and generates a random decimal number between 0 and 1. If it
+	   generates a number less than tolerance, it will change
+	   the background color. The actual time it takes to change color is
+	   random but by default its average time is
+	   [interval time in sec] / [probability] = 0.1 / 0.02 = 5 seconds.
+    	*/
+
+
+    	var newColor = "red";
+
+    	function updateBackground() {
+    		// DO NOT MODIFY THIS CONDITION
+
+    		if (Math.random() < 0.02 && gameState == "wait") {
+    			// Need to implement:
+    			// 0. change background color to red (done)
+    			// 1. start the timer
+    			// 2. show the timer on the screen; need place in HTML
+    			// 3. change gameState to "started"
+    			document.body.style.backgroundColor = newColor;
+    			startTime = new Date();
+    			gameState = "started"
+
+    		}
+    	}
+
+    	function reset(){
+    		window.location.reload();
+    	}
+
+
+    	// DO NOT MODIFY THIS LINE
+    	setInterval(updateBackground, 100);
+
+    </script>
+</body>
+</html>

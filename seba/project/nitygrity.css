@@ -1,0 +1,48 @@
+
+body {
+      background-color: black;
+      color: lightgreen;
+      margin: 55px 120px;
+
+
+      font-family: trebuchet MS;
+    }
+
+
+hr {
+  border: 3px solid lightgrey;
+
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+
+img.picright {
+  float: right;
+  margin: 10px;
+}
+
+
+table, th, td  {
+  border: 3px solid rgba(100, 100, 100, 0.9);
+}
+
+tr {
+  background: rgba(160, 160, 160, 0.9);
+}
+
+th {
+  background: rgba(140, 140, 140, 0.9);
+}
+
+a {
+  color: lightblue;
+  }
+
+    
+a:hover {
+    color: limegreen;
+    }

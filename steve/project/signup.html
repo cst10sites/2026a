@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <meta charset="UTF-8">
+    <title>FindMyTutor</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="icon" type="image/png" href="Logo.png">
+  </head>
+  <body>
+    <div>
+      <!-- navbar -->
+      <div class="topnav">
+        <a href="Findmytutor.html" class="logo-link">
+          <img src="Logo.png" alt="Logo" id="logo">
+        </a>
+        <div id="links">
+          <a href="aboutus.html">About us</a>
+          <a href="login.html">Log in</a>
+          <a href="signup.html">Sign up</a>
+          <a href="register.html">Register</a>
+        </div>
+      </div>
+      <h2>Sign up to become a tutor</h2>
+      <form>
+        <label>Full name:</label>
+        <input type="text" id="First name" size="15">
+        <input type="text" id="Last name" size="15">
+        <h3>What is your Email address?</h3>
+        <input type="text" id="email" size="15">
+        <h3>Set username</h3>
+        <input type="text" id="username" size="15">
+        <br>
+        <h3>Password</h3>
+        <label>Set password:</label>
+        <input type="password" id="pwrd">
+        <br>
+        <label>Confirm password:</label>
+        <input type="password" id="confirmpwrd">
+        <br>
+        <h3>Date of Birth</h3>
+        <input type="date" id="date">
+        <button onclick="login()">Log In</button>
+        <h3>Why do you want to join FindMyTutor?</h3>
+        <textarea id="w3review" name="w3review" rows="4" cols="50">	</textarea>
+        <h3>What is your education level?</h3>
+        <form>
+	    <input id="education" type="radio" value="High school or below" name="group">
+	    <label>High school or below</label><br>
+	    <input type="radio" value="Bachelor's degree" name="group">
+	    <label>Bachelor's degree</label><br>
+	    <input type="radio" value="Master's degree" name="group">
+	    <label>Master's degree</label><br>
+      </form>
+      <div class="button-container">
+  <button type="button" onclick="goHome()">Sign up</button>
+</div>
+    <script>
+  function goHome() {
+    window.location.href = "Findmytutor.html";
+  }
+</script>
+  </body>
+</html>

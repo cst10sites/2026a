@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>HTML Assignment 4 app 1</title>
+	<link rel="icon" type="image/x-icon" href="calc.ico">
+</head>
+<body>
+
+<div>
+
+	<h1>Tip Calculator</h1>
+	<h3>subtotal</h3>
+
+	<form>
+		<input type="text" id="subtotal">
+		<h4>+GST(5%)</h4>
+		<p id="output"></p>
+		<br>
+		<h4>Tip (if aplicable)</h4>
+		<select id="tiptotal">
+		<option value="1.00" >None(0%)</option>
+		<option value="1.10" >Fair(10%)</option>
+		<option value="1.15" >Average(15%)</option>
+		<option value="1.20" >Excellent(20%)</option>
+		</select>
+		<p id="tipoutput"></p>
+		<br>
+		<h4>Split (if aplicable)</h4>
+		<select id="split">
+			<option value="1.0">1</option>
+			<option value="2.0">2</option>
+			<option value="3.0">3</option>
+			<option value="4.0">4</option>
+			<option value="5.0">5</option>
+			<option value="6.0">6</option>
+		</select>
+		<p id="splitoutput"></p>
+		<br>
+		<input type="button" value="Submit" onclick="calculate()">
+	</form>
+	
+	</div>
+	<a class="button" href="../a4/reaction.html">reaction game app</a>
+
+
+	<script src="calc.js">
+	</script>
+
+</body>
+</html>

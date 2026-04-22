@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CCC Quiz</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>CCC Quiz</h1>
+
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page2.html">Getting Started</a></li>
+            <li><a href="page3.html">Practice Problems</a></li>
+            <li><a href="page4.html">Tips & Tricks</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Test Your CCC Knowledge!</h2>
+
+        <form id="quizForm">
+            <p>1. What programming language is most common in the CCC?</p>
+            <input type="radio" name="q1" value="Python"> Python<br>
+            <input type="radio" name="q1" value="Java"> Java<br>
+            <input type="radio" name="q1" value="C++"> C++<br>
+
+            <p>2. What does CCC stand for?</p>
+            <input type="radio" name="q2" value="Canadian Coding Contest"> Canadian Coding Contest<br>
+            <input type="radio" name="q2" value="Canadian Computing Competition"> Canadian Computing Competition<br>
+            <input type="radio" name="q2" value="Computer Challenge Canada"> Computer Challenge Canada<br>
+
+            <p>3. Which skill is NOT directly tested in the CCC?</p>
+            <input type="radio" name="q3" value="Problem-solving"> Problem-solving<br>
+            <input type="radio" name="q3" value="Programming"> Programming<br>
+            <input type="radio" name="q3" value="Drawing"> Drawing<br>
+
+            <p>4. What is the main goal of the CCC?</p>
+            <input type="radio" name="q4" value="Test typing speed"> Test typing speed<br>
+            <input type="radio" name="q4" value="Test problem-solving and programming skills"> Test problem-solving and programming skills<br>
+            <input type="radio" name="q4" value="Test computer hardware knowledge"> Test computer hardware knowledge<br>
+
+            <p>5.Which of the following is commonly needed to solve CCC problems?</p>
+            <input type="radio" name="q5" value="Logical thinking"> Logical thinking<br>
+            <input type="radio" name="q5" value="Drawing diagrams"> Drawing diagrams<br>
+            <input type="radio" name="q5" value="Web design"> Web design<br>
+
+
+            <br>
+            <button type="button" onclick="checkQuiz()">Submit</button>
+        </form>
+
+        <p id="result"></p>
+    </section>
+</main>
+
+<footer>
+    <p>Computer Studies Project – CCC Preparation</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+

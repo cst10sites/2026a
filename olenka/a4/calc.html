@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Assignment 4 App 1</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="calc.js" defer></script>
+
+</head>
+<body>
+	<h1>Tip Calculator</h1>
+
+
+
+	<label>Subtotal:
+		<input type="text" id="subtotal">
+	</label>
+
+	<p id="afterTax">Total After Tax: $0.00</p>
+	<p>+ GST (5%)</p>
+
+	<br></br>
+
+
+
+	<label>Tip:
+		<select id="tip">
+			<option value="0">None (0%)</option>
+			<option value="0.10">Fair (10%)</option>
+			<option value="0.15">Average (15%)</option>
+			<option value="0.20">Excellent (20%)</option>
+		</select>
+	</label>
+
+    <p id="afterTip">Total After Tip:$0.00</p>
+
+	<br></br>
+
+	<label>Split:
+		<input type="number" id="split" min="1" value="1">
+	</label>
+
+    <p id="eachPays":>Total Each Pays: $0.00</p>
+	
+	<br></br>
+
+
+	<input type="button" value="Submit" onclick="calculate()">
+	<input type="button" value="Reset" onclick="resetForm()">
+
+	
+	<p id="output"></p>
+
+    <a href="reaction.html">Go to App 2</a>
+
+</body>
+</html>

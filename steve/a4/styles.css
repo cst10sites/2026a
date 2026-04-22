@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    text-align: center;
+}
+
+form {
+    background-color: grey;
+    width: 300px;
+    margin: 20px auto;
+    padding: 18px;
+    
+    }
+
+input {
+    margin: 5px;
+}
+
+p {
+    font-weight: bold;
+}

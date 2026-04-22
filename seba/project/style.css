@@ -1,0 +1,35 @@
+body {
+			background-color: black;
+			color: lightgreen;
+			margin: 55px 150px;
+
+
+			font-family: trebuchet MS;
+		}
+
+p {
+	margin: 20px 0px;
+	padding: 20px 0px;
+}
+
+img.picright {
+	float: right;
+	margin: 10px;
+}
+
+hr {
+  border: 3px solid lightgrey;
+
+  }
+
+ a {
+	color: lightblue;
+	}
+
+		
+a:hover {
+		color: limegreen;
+		}
+
+hr {
+  border: 3px solid lightgrey;

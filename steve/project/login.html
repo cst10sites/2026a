@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FindMyTutor - Login</title>
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="icon" type="image/png" href="Logo.png">
+</head>
+
+<body>
+  <!-- navbar -->
+  <div class="topnav">
+    <a href="Findmytutor.html" class="logo-link">
+      <img src="Logo.png" alt="Logo" id="logo">
+    </a>
+    <div id="links">
+      <a href="aboutus.html">About us</a>
+      <a href="login.html">Log in</a>
+      <a href="signup.html">Sign up</a>
+      <a href="register.html">Register</a>
+    </div>
+  </div>
+
+  <h2>Login</h2>
+
+  <!-- DEMO ONLY -->
+  <form onsubmit="return false;">
+    <label>
+      Username:
+      <input type="text" id="username">
+    </label>
+    <br><br>
+
+    <label>
+      Password:
+      <input type="password" id="password">
+    </label>
+    <br><br>
+
+    <button type="button" onclick="login()">Log In</button>
+    <br><br>
+    <button type="button" onclick="toggleHint()">Show Hint</button>
+
+    <p id="message"></p>
+    <p id="hint" hidden>
+      Hint: Username is your full name. Password is my full name. There are no uppercase letters.
+    </p>
+  </form>
+
+  <script>
+    function login() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      if (username === "colinkam" && password === "stevejung") {
+        // store username for next page
+        localStorage.setItem("loggedInUser", username);
+        window.location.href = "Findmytutor.html";
+      } else {
+        document.getElementById("message").textContent =
+          "Invalid username or password.";
+      }
+    }
+
+    function toggleHint() {
+      const hint = document.getElementById("hint");
+      hint.hidden = !hint.hidden;
+    }
+  </script>
+</body>
+</html>

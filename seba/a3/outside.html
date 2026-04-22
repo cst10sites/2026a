@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--Attach style.css to this page-->
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<meta charset="UTF-8">
+	<title>HTML Assignment 3</title>
+
+<style>
+	
+	.bluebg {
+		background-color: blue; 
+		color: white;
+	}
+
+</style>
+
+</head>
+<body>
+
+<h1>HTML/CSS Guide</h1>
+	<h2> Common HTML Tags outside &lt;body&gt; </h2>
+
+<table style="width: 100%">
+	
+	<tr>
+		<th>Tag</th>
+		<th>Definition</th>
+		<th>Example(s) if aplicable</th>
+	</tr>
+
+	<tr>
+		<td>&lt;!DOCTYPE html&gt;</td>
+		<td>It specifies the specific HTML version used, and ensured that browsers render the page correctly. It is also outside of the &lt;hml&gt;tag.</td>
+		<td>No examples</td>
+	</tr>
+
+	<tr>
+		<td>&lt;html lang="en"&gt;<br>&lt;/html&gt;</td>
+		<td>It is the container for all other HTML elements.</td>
+		<td>This page, aswell as the previous one, has been set to "en" for english. This tsg helps websites such as Google Translate know the default language for this page.</td>
+	</tr>
+
+	<tr>
+		<td>&lt;meta charset="UTF-8"&gt;</td>
+		<td>charset=character set, charset defines the character encoding for the HTML document. UTF-8 is a character set that covers almost all characters and symbols in the world.</td>
+		<td>No examples</td>
+	</tr>
+
+	<tr>
+		<td>&lt;meta http-equiv="refresh" content="0; url=$URL"&gt;</td>
+		<td>The http-equiv="refresh" tells the web page to refresh after a specific amount of seconds.<br> The content="0; url$URL", the number controls the amount of seconds it will wait before refreshing, and the url is the where the page will be redirected to after the specific amount of seconds.</td>
+		<td>No examples</td>
+	</tr>
+
+	<tr>
+		<td>&lt;title&gt;...&lt;/title&gt;</td>
+		<td> It makes the title on the page tab</td>
+		<td><img alt="png" style="width: 150px" src="titlepic.png"></td>
+	</tr>
+
+	<tr>
+		<td>&lt;style&gt;...&lt;/style&gt;</td>
+		<td>Section that describes the internal CSS of the page</td>
+		<td class="bluebg">This cell's background was made blue through &lt;style&gt;/internal CSS</td>
+	</tr>
+
+	<tr>
+		<td>&lt;link rel="stylesheet" href="style.css"&gt;</td>
+		<td>Points to an external CSS file</td>
+		<td>This page and the previous one point to a common style.css file that controls the look of these pages.</td>
+	</tr>
+
+	<tr>
+		<td>&lt;link rel="icon" type="image/x-icon" href="favicon.ico"&gt;</td>
+		<td>Adds a favicon</td>
+		<td><img alt="png" style="width: 150px" src="iconpic.png"></td>
+	</tr>
+
+
+</table>
+
+<a class="button" href="../a3/index.html">previous page</a>
+
+</body>
+</html>

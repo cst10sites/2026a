@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <meta charset="UTF-8">
+    <title>FindMyTutor</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="icon" type="image/png" href="Logo.png">
+  </head>
+  <body>
+    <div>
+      <!-- navbar -->
+      <div class="topnav">
+        <a href="Findmytutor.html" class="logo-link">
+          <img src="Logo.png" alt="Logo" id="logo">
+        </a>
+        <div id="links">
+          <a href="aboutus.html">About us</a>
+          <a href="login.html">Log in</a>
+          <a href="signup.html">Sign up</a>
+          <a href="register.html">Register</a>
+        </div>
+      </div>
+      <p>Welcome to the official FindMyTutor website, a student-led, non-profit platform designed to make free academic support accessible to young learners. This website serves as the central hub for learning about our organization, our values, and the services we provide.
+        <br>
+        <br>
+
+Through the homepage, visitors can gain a clear overview of FindMyTutor’s mission and impact. The About Us page outlines who we are, what we stand for, and how our student volunteers work together to support elementary-level students. Users can create an account through the Sign Up and Register pages, allowing them to join our community as tutors and contribute to meaningful educational support. The Log In page provides returning users with secure access to their accounts and platform features.
+<br>
+<br>
+Together, these features ensure a clear, organized, and user-friendly experience for anyone interested in learning about FindMyTutor or becoming part of its mission to support students through free tutoring. </p>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="FindMyTutor poster; Tutors.jpg" style="width:95%">
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="FindMyTutor poster; Tutors (2).jpg" style="width:95%">
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="CALLING ALL TUTORS!!.jpg" style="width:95%">
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="CALLING ALL TUTORS!! (1).jpg" style="width:95%">
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <!-- DOTS -->
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+      <img src="FindMyTutor Brochure.jpg" alt="Brochure" width="100%" height="100%">
+      <img src="FindMyTutor Brochure (1).jpg" alt="Brochure1" width="100%" height="100%">
+      <p>FindMyTutor Brochure</p>
+      <script>
+        let slideIndex = 1;
+        let slideshowTimer = null;
+        let isPaused = false;
+        // INITIALIZE
+        showSlides(slideIndex);
+        startAuto();
+        // NEXT / PREV
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        // DOT CONTROLS (FIXED)
+        function currentSlide(n) {
+          pauseSlideshow(); // ← critical line
+          showSlides(slideIndex = n);
+        }
+        // RENDER SLIDE
+        function showSlides(n) {
+          let i;
+          const slides = document.getElementsByClassName("mySlides");
+          const dots = document.getElementsByClassName("dot");
+          if (n > slides.length) slideIndex = 1;
+          if (n < 1) slideIndex = slides.length;
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+        }
+        // AUTO CONTROLLER
+        function startAuto() {
+          if (isPaused) return;
+          slideshowTimer = setTimeout(() => {
+            plusSlides(1);
+            startAuto();
+          }, 4000);
+        }
+        // PAUSE LOGIC (REUSED)
+        function pauseSlideshow() {
+          isPaused = true;
+          clearTimeout(slideshowTimer);
+        }
+        // STOP ON SLIDESHOW CLICK
+        document.querySelector(".slideshow-container").addEventListener("click", pauseSlideshow);
+	</script>
+      </script>
+  </body>
+</html>

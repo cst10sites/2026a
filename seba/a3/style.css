@@ -1,0 +1,43 @@
+table {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+
+table, th, td  {
+  border: 3px solid black;
+}
+
+tr {
+  background: rgba(220, 220, 220, 0.9);
+}
+
+th {
+  background: lightgrey;
+}
+
+.button {
+      background-color: darkgreen;
+      color: white;
+      padding: 15px 32px;
+      text-decoration: none;
+      text-align: center;
+      border: none;
+      font-size: 1.25em;
+      border-radius: 25px;
+      border-style: dotted;
+      border-color: blue;
+      border-width: thick;
+      display: inline-block;
+      /* prevent button stuck in text */
+    }
+
+    .button:hover {
+      background-color: lightgreen;
+      color: grey;
+    }
+
+body {
+  font-family: Arial, Helvetica;
+  background: lightgrey;
+}

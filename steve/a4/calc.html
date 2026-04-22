@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tip Calculator</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="favicon.webp" type="image/x-icon">
+	<!--need to link to style.css-->
+</head>
+<body>
+	<h1>Tip Calculator</h1>
+	<form>
+		<input type="text" id="subtotal">
+		<!--rest of the input objects belong into one form-->
+		<p>Tips</p>
+		<label><input type="radio" id="tip" name="tip" value="0"> Terrible (0%)</label><br>
+		<label><input type="radio" id="tip1" name="tip" value="0.10"> Decent (10%)</label><br>
+		<label><input type="radio" id="tip2" name="tip" value="0.15"> Good (15%)</label><br>
+		<label><input type="radio" id="tip3" name="tip" value="0.20"> Excellent (20%)</label><br>
+		<p>Split Bills</p>
+		Number of People:
+		<input type="number" id="split" value="1" min="1">
+		<p id="output"></p>
+		<p id="afterTip"></p>
+		<p id="splitbills"></p>
+		<input type="button" value="Submit" onclick="calculate()">
+		<input type="button" value="Reset" onclick="resetForm()">
+		<p>Go to the <a href="reaction.html">Reaction game</a>
+
+
+
+	</form>
+
+	<script src="calc.js"></script>
+
+</body>
+</html>

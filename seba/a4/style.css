@@ -1,0 +1,39 @@
+body {
+			background-color: darkgreen;
+			color: ghostwhite;
+			margin: 55px 465px;
+			font-family: trebuchet MS;
+		}
+		
+div {
+			background-color: grey;
+			padding: 25px 155px;
+			border-color: lightblue;
+			border-width: thick;/* thin, medium */
+			border-style: dashed;/* dashed, solid, double, ridge, dotted */
+			box-shadow: -15px 15px darkblue;
+
+		}
+
+
+.button {
+      background-color: grey;
+      color: white;
+      padding: 15px 32px;
+      text-decoration: none;
+      text-align: center;
+      border: none;
+      font-size: 1.25em;
+      border-radius: 25px;
+      border-style: dotted;
+      border-color: blue;
+      border-width: thick;
+      display: inline-block;
+      /* prevent button stuck in text */
+    }
+
+.button:hover {
+      background-color: black;
+      color: grey;
+      border-color: lightblue;
+    }

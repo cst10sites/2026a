@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Assignment 4 app 1</title>
+</head>
+<body>
+	<h1>Tip Calculator</h1>
+	<form>
+		<input type="text" id="subtotal">
+		<input type="button" value="Submit" onclick="calculate()">
+	</form>
+	<p id="output"></p>
+
+	<!--need to move code to calc.js-->
+	<script>
+		/* Summary:
+			1. Number(aStr): converts text to a number (for arithmetic)
+			2. aNumber.toFixed(2): converts a number to text with 2 decimal places
+		*/
+		function calculate() {
+			var subtotal = document.getElementById('subtotal').value;
+			var gst = 0.05 * Number(subtotal);
+			console.log(gst);
+			var afterGST = Number(subtotal) + gst;
+			document.getElementById('output').innerHTML = "$ " + afterGST.toFixed(2);
+
+
+		}
+	</script>
+
+</body>
+</html>
