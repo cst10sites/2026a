@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Assignment 4 App 1</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<!--need to link to style.css-->
+</head>
+<body>
+	<h1>Tip Calculator</h1>
+	
+	<form>                            
+		<h2>Your Bill</h2>
+		<input type="number" id="subtotal" >        
+		<p id="afterGST"></p>
+
+		<h2> YourTips</h2>
+	    <!-- id in select, value in option-->
+	    <select id="Tipvalue"><!--no input for dropdown-->
+	        <option value="0.00">0%</option>
+	        <option value="0.10">10%</option>
+	        <option value="0.15">15%</option>
+	        <option value="0.20">20%</option>
+	    </select>
+	    <p id="Tip"></p>
+
+		<h2>Number of Person</h2>
+		<input type="number" id="people" oninput="calculate()">
+		<p id="divide"></p>
+	    <input type="reset"> 
+
+	<form>
+		<h2>Will You Treat Your Friends To Dinner</h2>
+	    <input id="choice1" type="checkbox" value="Yes" name="group">
+	    <label>Yes</label>
+	    <input id="choice2" type="checkbox" value="No" name="group">
+	    <label>No</label><br>
+	    <input type="button" value="result" onclick="ex1();"><br> 
+		<input type="reset"><br> 
+	</form> 
+
+	
+	<ul><a href="index.html"><strong>Go to index html</strong></a></ul>
+	<ul><a href="reaction.html"><strong>Go to Reaction</strong></a></ul>
+
+	<!--need to move code to calc.js-->
+	<script src="calc.js"></script>
+
+
+</body>
+</html>

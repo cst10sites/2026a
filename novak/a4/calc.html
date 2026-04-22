@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Assignment 4 App 1</title>
+	<!--need to link to style.css-->
+	<style></style>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="stylesheet" href="style.css"> </head>
+
+<body>
+	<h1>Tip Calculator</h1>
+	<h2>Subtotal</h2>
+	<form>
+		<input type="text" id="subtotal">
+		<p id="output"></p>
+		<br>
+		<h2>tip amount (%)</h2>
+		<input type="text" id="tip">
+		<p id="tipOutput"></p>
+		<br>
+		<p id="tippy"></p>
+		<br>
+		<h2>How many ways would you like to split the bill?</h2>
+		<input id="split" type="number" min="1" max="20" value="1">
+		<p id="totalSplit"></p>
+		<br>
+		<input type="button" value="Submit" onclick="calculate()">
+		<input type="button" value ="refresh" onclick="refresh()">
+		  <p> Click here to open <a  class="button" href="reaction.html">reaction.html</a>. </p>
+	</form>
+	<script src="calc.js">
+	</script>
+</body>
+
+</html>

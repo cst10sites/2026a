@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Assignment 4 App 1</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/x-icon" href="file:///C:/Users/2170629/OneDrive%20-%20Board%20of%20Education%20of%20SD%2039%20(Vancouver)/CST%2010/HTML/a4/Screenshot%202025-12-01%20102256.png">
+	<style>
+		/* CSS: w3schools.com */
+		body {
+			background-color: black;
+			color: black;
+			margin: 25px 125px;
+			font-family: "Trebuchet MS";
+		}
+
+		h1, h2 {
+			color: white;
+		}
+
+		div {
+			background-color: grey;
+			padding: 15px 25px;
+			border-color: white;
+			border-width: thick; /* thin, medium*/
+			border-style: solid; /* dashed, dotted, double, ridge */
+			box-shadow: 15px 10px darkgrey;
+		}
+
+		a {
+			color: yellow;
+		}
+
+		/* :active, :hover, :visited */
+		a:hover {
+			color: limegreen;
+		}
+
+		h2:active {
+			color: red;
+		}
+
+		/* class="button" */
+		.button {
+			background-color: blue;
+			color: black;
+			padding: 15px 32px;
+			text-decoration: none;
+			text-align: center;
+			font-size: 1.25em;
+			border: none;
+			border-radius: 10px;
+			border-style: double;
+			border-color: magenta;
+			border-width: thick;
+			display: inline-block; 
+			/* prevent button stuck in text*/
+		}
+
+		.button:hover {
+			background-color: yellow;
+			color: blue;
+		}
+
+
+
+
+
+	</style>
+
+</head>
+<body  style="color: white;">
+	<h1 style="text-align: center;" >Tip Calculator</h1>
+	<h3 style="text-align: center;">Subtotal:</h3>
+	<form style="text-align: center;">
+		<input type="text" id="subtotal">
+		<input type="button" value="Submit" onclick="calculate()">
+	</form>
+	<p style="text-align: center;">+GST(5%)</p>
+	<p style="text-align: center;">After tax Total: </p>
+	<p id="output" style="text-align: center;"></p>
+	<br>
+	<form style="text-align: center;">
+		<label>Select your tip options: </label>
+		<br><br>
+
+		<input id="tip1" name="tip" type="radio" value="0">
+		<label>None (0%)</label>
+		<br>
+		<input id="tip2" name="tip" type="radio" value="0.10">
+		<label>Fair/bad (10%)</label>
+		<br>
+		<input id="tip3" name="tip" type="radio" value="0.15">
+		<label>Good/average (15%)</label>
+		<br>
+		<input id="tip4" name="tip" type="radio" value="0.20">
+		<label>Fantastic (20%)</label>
+
+		<br>
+		
+		<input type="button" value="Submit" onclick="tipcalculate();">
+	</form>
+	
+	<p id="outputTip" style="text-align: center;"></p>
+	<p id="outputAfterTip" style="text-align: center;"></p>
+
+	<script src="calc.js" defer></script>
+
+	<p style="color: white;"> Click here to open <a href="reaction.html">reaction.html</a>. </p>
+
+</body>
+</html>

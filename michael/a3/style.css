@@ -1,0 +1,61 @@
+
+body {
+  background-image: url("Seashore.jpg");
+  background-size: 100% auto; /* stretch bg to fit */
+  font-family: Italic;
+}
+
+div.topnav {
+  overflow: hidden;
+  background-color: darkgrey;
+  position: relative;
+
+}
+
+div.topnav #moreLinks {
+  display: none; /* to hide by default */
+  /* display: block to show by default */
+  /*position: absolute;*/
+
+}
+
+div.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+div.topnav a:hover {
+  color: black;
+  background-color: lightgrey;
+}
+
+div.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+div.content {
+  /* background-color: white; */
+  background: rgba(255, 255, 255, 0.5);
+  padding: 25px;
+}
+
+
+/* table */
+
+table {
+  height: 400px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table, th, td {
+  border: 3px solid black;
+}

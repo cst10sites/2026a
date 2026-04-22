@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Assignment 4 App 2</title>
+	<link rel="icon" type="image/x-icon" href="timer.ico">
+	<link rel="stylesheet" href="style.css">
+	<!--need to link to style.css-->
+
+</head>
+<body>
+	<h1>Reaction Timer</h1>
+
+	<p>Click the stop button as soon as the screen changes.</p>
+
+	<button onclick="react()" id="buttonID">
+		<img style="width: 300px" src="Big_Red_Button.png" alt="click">
+	</button>
+	<button onclick="refresh()" ><img style="width: 350px" src="https://img.freepik.com/premium-vector/reset-button_592324-8781.jpg" alt="reset"></button>
+	<!--add a reset button that refreshes the page-->	<p id="output"></p>
+	  <p> Click here to open <a class="button" href="calc.html">calc.html</a>. </p>
+	<p>Click under 0.3500000 seconds for a chance to win $1000*</p>
+	<br>
+	<p>
+		Enter  the form below to recieve your money.
+	</p>
+	<form>
+	    <label>Account numnber, Personal identification information, email and Pin:</label><br>
+	    <input type="text" id="accountNumber"><br>
+	    <input type="text" id="personalIdentificationInformation"><br>
+	    <input type="text" id="email"><br>
+	    <input type="password" id="pwrd"><br>
+	    <br><!--textarea for multi-line input (not input)-->
+	    <input type="button" value="Submit" onclick="mailToMe();">
+	    <input type="reset"><br> 
+	    <!--This is a special type of button that resets all values in the form that it belongs to-->   
+	</form>
+
+	  
+
+	<h6>*Terms and conditions apply.</h6>
+
+    <script src="reaction.js">
+    	
+
+    </script>
+</body>
+</html>

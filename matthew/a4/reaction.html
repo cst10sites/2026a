@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="https://freepngimg.com/download/time/11-2-time-free-png-image.png">
+	<title>HTML Assignment 4 App 2</title>
+		<style>
+		/* CSS: w3schools.com */
+		body {
+			background-color: black;
+			color: black;
+			margin: 25px 125px;
+			font-family: "Trebuchet MS";
+		}
+
+		h1, h2 {
+			color: yellow;
+		}
+
+		div {
+			background-color: grey;
+			padding: 15px 25px;
+			border-color: white;
+			border-width: thick; /* thin, medium*/
+			border-style: solid; /* dashed, dotted, double, ridge */
+			box-shadow: 15px 10px darkgrey;
+		}
+
+		a {
+			color: yellow;
+		}
+
+		/* :active, :hover, :visited */
+		a:hover {
+			color: limegreen;
+		}
+
+		h2:active {
+			color: red;
+		}
+
+		/* class="button" */
+		.button {
+			background-color: blue;
+			color: black;
+			padding: 15px 32px;
+			text-decoration: none;
+			text-align: center;
+			font-size: 1.25em;
+			border: none;
+			border-radius: 10px;
+			border-style: double;
+			border-color: magenta;
+			border-width: thick;
+			display: inline-block; 
+			/* prevent button stuck in text*/
+		}
+
+		.button:hover {
+			background-color: yellow;
+			color: blue;
+		}
+
+
+
+
+
+	</style>
+
+	
+</head>
+<body style="background-color: black;">
+	
+	<h1 style="color: white;">Reaction Timer</h1>
+
+    <div class="container">
+        <!-- The react() function is defined in reaction.js -->
+	    <button onclick="react()" id="actionButton">Click?</button>
+        <!-- The reset button reloads the page -->
+	    <button onclick="location.reload()" id="resetButton">Reset</button>
+
+	    <p id="output" style="color: white;">Click when the screen turns green!</p>
+
+        <!-- Hyperlink back to App 1 (assuming it's in the same folder) -->
+        <p style="color: white;"><a href="calc.html">Go to calc.html</a></p>
+    </div>
+
+
+	<script src="reaction.js"></script>
+</body>
+</html>

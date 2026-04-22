@@ -1,0 +1,34 @@
+body {
+  font-family: Arial, Helvetica;
+  margin: 0px 100px;
+  background-image: url("https://www.cabq.gov/artsculture/biopark/news/10-cool-facts-about-penguins/%40%40download/image/Baby%20penguin%20wikimedia%20commons.jpg");
+  background-size: 100% auto;
+  background-attachment: fixed;
+}
+
+table, th, td{
+  border: 3px solid black;
+}
+tr{
+  background: rgba(255, 255, 255, .5);
+}table{
+  border-collapse: collapse;
+  text-align: center;}
+
+  
+
+
+
+.button {
+      background-color:grey;
+      color:darkgrey;
+      padding: 15px 32px ;
+      text-decoration:none ;
+      text-align: center;
+      font-size: 1.25em;
+      border-radius: 25px;
+      border-style: solid;
+      border-color:black;
+      display:inline-block;
+
+    }
